@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Página con formato HTML5</title>
+<link href="css/estilo.css" rel="Stylesheet">
+</head>
+<body onload="terremoto(6)">
+
+<script type="text/javascript">
+
+
+	var ie4,nn4;
+	if (document.all)ie4=true;
+	if (document.layers)nn4=true;
+	
+	function terremoto(cuenta) {
+	if (nn4 || ie4) {
+	for (i = 13; i > 0; i--) {
+	  for (j = cuenta; j > 0; j--) {
+	    self.moveBy(0,i);
+	    self.moveBy(i,0);
+	    self.moveBy(0,-i);
+	    self.moveBy(-i,0);}
+}}}
+
+
+</script>
+
+	<header> header </header>
+	<nav>
+		<a href="#">Opción 1</a>
+		<a href="#">Opción 2</a>
+		<a href="#">Opción 3</a>
+	</nav>
+	<div id="contenido">
+		<section>
+			<article>article 1</article>
+			<article>article 2</article>
+			<article>article 3</article>
+			<article>article 4</article>
+		</section>
+		<aside>aside</aside>
+	</div>
+	<footer> footer </footer>
+</body>
+</html>
